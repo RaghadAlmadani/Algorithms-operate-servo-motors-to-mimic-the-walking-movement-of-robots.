@@ -1,9 +1,13 @@
 # Algorithms-operate-servo-motors-to-mimic-the-walking-movement-of-robots.
-Here’s a simple algorithm for a robot with legs to walk:
 
-1. **Initialize**: Set initial leg positions.
-2. **Lift Leg**: Choose a leg to lift (e.g., right front).
-3. **Move Leg Forward**: Move the lifted leg forward while keeping balance.
-4. **Place Leg Down**: Set the leg down at the new position.
-5. **Repeat**: Switch to the next leg and repeat steps 2-4.
-6. **Adjust Balance**: Continuously adjust the center of gravity for stability.
+
+1. **Initialize**: Set initial servo motor positions for each joint.
+2. **Select Leg**: Choose a leg to move (e.g., right front).
+3. **Servo Adjustments**: 
+   - **Lift**: Activate servo motors to lift the leg by adjusting joint angles.
+   - **Swing Forward**: Move the leg forward using servo motors to adjust joint positions.
+   - **Extend**: Adjust servo motors to extend the leg to its forward position.
+4. **Set Leg Down**: Lower the leg by reversing the lift servo adjustments.
+5. **Shift Weight**: Adjust the balance by shifting weight using servo motors.
+6. **Repeat**: Move to the next leg and repeat steps 2-5.
+7. **Fine-Tune**: Continuously adjust servo motors for balance and gait optimization.
